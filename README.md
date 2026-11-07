@@ -69,3 +69,8 @@ steps:
           target: .buildkite/commands/collate_and_trigger_pipeline.sh
           target_type: grouped_command
 ```
+
+## Versioning
+
+Releases are tagged as `vX.Y.Z`.
+The major-version tag (e.g. `v1`) is moved automatically by the `TagAlias` workflow to point at the latest `vX.Y.Z` release, so referencing the plugin as `JuliaCI/forerunner#v1` tracks the latest `v1.y.z` release.
